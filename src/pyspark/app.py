@@ -6,7 +6,7 @@ spark = SparkSession.builder.getOrCreate()
 print(spark)
 
 # Load data from a JSON file into a DataFrame
-df_device = spark.read.json(r"C:\Users\DNC-PC-264\Documents\GitHub\sparkProject\docs\files\device\*.json")
+df_device = spark.read.json("C:/Users/DNC-PC-264/Documents/GitHub/sparkProject/docs/files/device/*.json")
 
 # Display the DataFrame content
 df_device.show()
